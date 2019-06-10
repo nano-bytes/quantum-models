@@ -4,7 +4,7 @@ from qubitBuilder import QubitBuilder
 def analyze_qubit(qubit):
     qubit.probabilistic_density()
     qubit.analyze_wave_function()
-    qubit_one.observe()
+    qubit.observe()
 
 print("============= RANDOM QUBIT =============")
 qubit_one = QubitBuilder.build_random_qubit()
