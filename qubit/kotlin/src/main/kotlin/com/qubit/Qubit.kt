@@ -1,11 +1,13 @@
+package com.qubit
+
+import java.util.*
 import kotlin.math.pow
-import kotlin.random.Random
 
 /**
  * This class models a qubit
  * @author Paul Rodriguez-Ch
  */
-class Qubit(alpha: Complex, beta: Complex){
+class Qubit(alpha: Complex, beta: Complex) {
     var alpha: Complex
     var beta: Complex
     var ketZero: Array<Int>
@@ -29,7 +31,8 @@ class Qubit(alpha: Complex, beta: Complex){
             }else if(this.alpha.module().pow(2) > this.beta.module().pow(2)){
                 this.setQubitToZero()
             }else{
-                if(Random.nextInt(0, 1)==1) this.setQubitToOne() else this.setQubitToZero()
+                var random = Random()
+                if(random.nextInt(2)==1) this.setQubitToOne() else this.setQubitToZero()
             }
             this.isObserved = true
         }
@@ -60,5 +63,4 @@ class Qubit(alpha: Complex, beta: Complex){
         this.alpha.setValues(1f, 0f)
         this.beta.setValues(0f, 0f)
     }
-
 }

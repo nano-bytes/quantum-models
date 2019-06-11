@@ -1,11 +1,12 @@
-import kotlin.random.Random
+package com.qubit
+
+import java.util.*
 
 /**
  * This class are utilities used for the calculations
  * @author Paul Rodriguez-Ch
  */
-class Utilities{
-
+class Utilities {
     companion object {
 
         /**
@@ -17,7 +18,8 @@ class Utilities{
             var sum : Int = 0
             var randomNumbers = ArrayList<Int>()
             for (i in 0 until n){
-                var randomNumber = Random.nextInt(0, 100)
+                var random = Random()
+                var randomNumber = random.nextInt(100+1)
                 randomNumbers.add(randomNumber)
                 sum += randomNumber
             }

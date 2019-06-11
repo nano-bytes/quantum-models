@@ -1,11 +1,12 @@
+package com.qubit
+
 import kotlin.math.pow
 
 /**
  * This class models a complex number
  * @author Paul Rodriguez-Ch
  */
-class Complex (realNumber: Float, imaginaryNumber: Float){
-
+class Complex(realNumber: Float, imaginaryNumber: Float) {
     var realNumber: Float
     var imaginaryNumber: Float
 
