@@ -1,3 +1,5 @@
+package com.qubit
+
 import kotlin.math.pow
 
 /**
@@ -5,7 +7,6 @@ import kotlin.math.pow
  * @author Paul Rodriguez-Ch
  */
 class QubitBuilder {
-
     companion object {
 
         /**
